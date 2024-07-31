@@ -29,3 +29,8 @@ usr/bin/cmake -DCMAKE_INSTALL_PREFIX=/workspaces/OrderBook/out/install/orderbook
 ```
 cd /workspaces/OrderBook/out/build/orderbook && /usr/bin/ctest
 ```
+
+# Approach
+- The approach for storing market data is to use Tree Map like data structure which is available as `std::map` with custom sorting for buy and sell side respectively. The insertion and lookup of entries take `O(logN)` 
+
+- OrderBook also has priorityQueues for buy and sell side respectively. These queues help in quickly `O(1)` lookup top of order books. Also, these would be helpful in implementing matching orders functionality of the orderbook in future.
