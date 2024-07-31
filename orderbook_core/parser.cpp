@@ -25,5 +25,5 @@ void Parser::on_market_data(char const* data) noexcept {
 };
 
 TopOfBook Parser::get_top_of_book(const std::string& symbol) noexcept {
-    return TopOfBook{};
+    return TopOfBook{"X"};
 };
