@@ -1,7 +1,19 @@
+#include <iostream>
 #include "top_of_book.h"
 
 std::ostream& operator<<(std::ostream& os, const TopOfBook& tp){
-    os << tp.symbol;
+    os << "\n----------------------- BUY -----------------------" << std::endl;
+    for (const auto& buyQty: tp.buyQuantities){
+        os << "Qty: " << buyQty.second->quantity << " Price: " << buyQty.first << std::endl;
+    }
+    os << "***************************************************" << std::endl;
+
+    os << "\n----------------------- SELL ----------------------" << std::endl;
+    for (const auto& sellQty: tp.sellQuantities){
+        os << "Qty: " << sellQty.second->quantity << " Price: " << sellQty.first << std::endl;
+    }
+    os << "***************************************************" << std::endl;
+
     return os;
 }
 

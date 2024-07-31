@@ -1,6 +1,7 @@
 #pragma once
 #include "order.h"
 #include <unordered_map>
+#include <map>
 #include <string>
 #include <memory>
 #include <vector>
@@ -25,8 +26,8 @@ class TopOfBook{
     public:
         std::priority_queue<std::shared_ptr<Order>, std::vector<std::shared_ptr<Order>>, CompareBuy> buyOrders;
         std::priority_queue<std::shared_ptr<Order>, std::vector<std::shared_ptr<Order>>, CompareSell> sellOrders;
-        std::unordered_map<size_t, std::shared_ptr<Order>> buyQuantities;
-        std::unordered_map<size_t, std::shared_ptr<Order>> sellQuantities;
+        std::map<size_t, std::shared_ptr<Order>, std::greater<size_t>> buyQuantities;
+        std::map<size_t, std::shared_ptr<Order>> sellQuantities;
         std::string symbol;
 
         TopOfBook(std::string S): symbol(S), timestamp(0) {}

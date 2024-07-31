@@ -1,4 +1,5 @@
 #include "parser.h"
+#include "book.h"
 #include <sstream>
 #include <string>
 #include <iostream>

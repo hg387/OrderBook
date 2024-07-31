@@ -11,12 +11,13 @@ class Book{
         Book() = default;
         ~Book() = default;
 
-        static void initBook();
+        static void initBook() noexcept;
 
     public:
         Book(const Book&) = delete;
         Book& operator=(const Book&) = delete;
 
-        static Book* getInstance();
-        void addOrder(std::string symbol, int bid_price, int bid_quantity, int ask_price, int ask_quantity);
+        static Book* getInstance() noexcept;
+        void addOrder(std::string symbol, int bid_price, int bid_quantity, int ask_price, int ask_quantity) noexcept;
+        std::shared_ptr<TopOfBook> getBook(const std::string& symbol) noexcept;
 };
