@@ -1,0 +1,72 @@
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BookTests.SingletonTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BookTests
+[ RUN      ] BookTests.SingletonTest
+[       OK ] BookTests.SingletonTest (0 ms)
+[----------] 1 test from BookTests (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ParserMarketDataTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ParserMarketDataTest
+[       OK ] ParserTest.ParserMarketDataTest (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ParserTest.ParserMarketDataMultipleTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ParserTest
+[ RUN      ] ParserTest.ParserMarketDataMultipleTest
+[       OK ] ParserTest.ParserMarketDataMultipleTest (0 ms)
+[----------] 1 test from ParserTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderBookTest.InitTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderBookTest
+[ RUN      ] OrderBookTest.InitTest
+[       OK ] OrderBookTest.InitTest (0 ms)
+[----------] 1 test from OrderBookTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderBookTest.addMultiOrderTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderBookTest
+[ RUN      ] OrderBookTest.addMultiOrderTest
+[       OK ] OrderBookTest.addMultiOrderTest (0 ms)
+[----------] 1 test from OrderBookTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+Running main() from /workspaces/OrderBook/out/build/orderbook/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = OrderBookTest.addDuplicatePricesOrderTest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from OrderBookTest
+[ RUN      ] OrderBookTest.addDuplicatePricesOrderTest
+[       OK ] OrderBookTest.addDuplicatePricesOrderTest (0 ms)
+[----------] 1 test from OrderBookTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
