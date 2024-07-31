@@ -17,7 +17,7 @@ int main(){
     std::cout << "----------------------- Welcome to OrderBook -----------------------" << std:: endl;
     std::cout << "Reading market data from input.txt...." << std::endl;
     readMarketData("./input.txt");
-    std::cout << "------- Printing Order Book -------";
+    std::cout << "------- Printing Order Book -------" << std::endl;
     Parser::printCompleteBook();
     return 0;
 }

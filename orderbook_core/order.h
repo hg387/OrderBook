@@ -1,5 +1,3 @@
-#include <stddef.h>
-
 struct Order{
     enum Action {BUY = 0, SELL = 1};
 
