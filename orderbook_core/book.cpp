@@ -29,6 +29,7 @@ void Book::addOrder(std::string symbol, int bid_price, int bid_quantity, int ask
 std::shared_ptr<TopOfBook> Book::getBook(const std::string& symbol) noexcept{
     if (snapshots.find(symbol) != snapshots.end()) return snapshots[symbol];
 
+    std::cout << "Error symbol " << symbol << " not found!" << std::endl;
     return std::shared_ptr<TopOfBook>{};
 }
 

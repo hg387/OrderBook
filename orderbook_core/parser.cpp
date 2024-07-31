@@ -23,8 +23,15 @@ void Parser::on_market_data(char const* data) noexcept {
             return;
         }
     }
+
+    Book* book = Book::getInstance();
+    book->addOrder(symbol, prices[0], sizes[0], prices[1], sizes[1]);
 };
 
 TopOfBook Parser::get_top_of_book(const std::string& symbol) noexcept {
-    return TopOfBook{"X"};
+    Book* book = Book::getInstance();
+    std::shared_ptr<TopOfBook> top_of_book = book->getBook(symbol);
+
+    if (top_of_book.get() != nullptr) return *top_of_book;
+    return TopOfBook{""};
 };
