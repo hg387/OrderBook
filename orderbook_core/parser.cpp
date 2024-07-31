@@ -35,3 +35,7 @@ TopOfBook Parser::get_top_of_book(const std::string& symbol) noexcept {
     if (top_of_book.get() != nullptr) return *top_of_book;
     return TopOfBook{""};
 };
+
+void Parser::printCompleteBook() noexcept{
+    Book::getInstance()->printBook();
+}

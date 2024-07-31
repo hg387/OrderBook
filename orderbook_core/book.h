@@ -20,4 +20,5 @@ class Book{
         static Book* getInstance() noexcept;
         void addOrder(std::string symbol, int bid_price, int bid_quantity, int ask_price, int ask_quantity) noexcept;
         std::shared_ptr<TopOfBook> getBook(const std::string& symbol) noexcept;
+        void printBook() noexcept;
 };

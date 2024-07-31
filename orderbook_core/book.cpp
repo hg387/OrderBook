@@ -33,6 +33,14 @@ std::shared_ptr<TopOfBook> Book::getBook(const std::string& symbol) noexcept{
     return std::shared_ptr<TopOfBook>{};
 }
 
+void Book::printBook() noexcept{
+    for (const auto& sym: snapshots){
+        std::cout << "----------------------- " << sym.first << " -----------------------" << std::endl;
+        std::cout << (*sym.second) << std::endl;
+        std::cout << "----------------------- " << sym.first << " -----------------------" << std::endl;
+    }
+}
+
 
 
 

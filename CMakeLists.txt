@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.5.0)
 project(orderbook VERSION 0.1.0 LANGUAGES C CXX)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input.txt
+    ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 
 add_subdirectory(orderbook_core)
 add_subdirectory(orderbook_core/unit_tests)
